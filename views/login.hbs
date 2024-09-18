@@ -1,0 +1,11 @@
+<form action="/login" method="post">
+    <input type="text" name="username" placeholder="Username" required>
+    <input type="password" name="password" placeholder="Password" required>
+    <button type="submit">Login</button>
+    {{#if success}}
+    <p>Registration successful! Please login.</p>
+    {{/if}}
+    {{#if error}}
+    <p>{{error}}</p>
+    {{/if}}
+</form>
