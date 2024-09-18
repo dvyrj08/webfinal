@@ -69,7 +69,7 @@ const hbs = exphbs.create({
 // app.set('view engine', '.hbs');
 
 app.set("views", __dirname + "/views");
-app.set("view engine", "hbs");
+app.set("view engine", "ejs");
 app.use(express.static(__dirname + "public"));
 
 
